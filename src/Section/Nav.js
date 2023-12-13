@@ -14,7 +14,7 @@ const Nav = () => {
     <>
     <div className='navbar'>
         <h2 className="logo">Zcodes.Dev</h2>
-        <div className={!active ? "navlinks active" : "navlinks"}>
+        <div className={!active ? "navlinks " : "navlinks active"}>
         <IoCloseSharp className="close-icon" onClick={menuShow}/>
         <Link to='/' onClick={menuShow} className='navlink'>Home</Link>
         <a href='#about' onClick={menuShow} className='navlink'>About</a>

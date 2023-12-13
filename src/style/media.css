@@ -6,6 +6,9 @@
   }
 }
 @media (max-width: 660px) {
+    .navbar {
+    padding: 2rem 1rem 1rem;
+    }
   .menu {
     display: block;
     width: 2rem;
