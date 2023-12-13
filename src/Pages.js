@@ -1,17 +1,17 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom';
 import Home from './Section/Home';
-import Pricing from './Section/Pricing';
+import Projects from './Section/Projects';
 import Features from './Section/Features';
-import Resources from './Section/Resources';
+import Contact from './Section/Contact';
 
 const Pages = () => {
   return (
       <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/features' element={<Features/>} />
-      <Route path='/pricing' element={<Pricing/>} />
-      <Route path='/resources' element={<Resources/>} />
+      <Route path='/projects' element={<Projects/>} />
+      <Route path='/contact' element={<Contact/>} />
       </Routes>
   )
 }

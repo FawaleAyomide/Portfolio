@@ -1,0 +1,56 @@
+
+.container{
+  width: 100%;
+  height: 100vh;
+}
+video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .9);
+}
+.content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* navbar */
+.navbar{
+  display: flex;
+  place-content: center;
+  align-items: center;
+  gap: 38rem;
+  background-color: var(--Dark-Blue-intro);
+  padding: 2rem 2rem 1rem;
+  color: var(--White);
+}
+.navlinks{
+  display: flex;
+  gap: 2.5rem;
+}
+.navlink{
+  color: var(--White);
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.navlink:active{
+  color: var(--Cyan);
+}
+.navlink:hover{
+  color: var(--Cyan);
+  transition: .6s ease-in-out all;
+}
+.menu, .close-icon{
+  display: none;
+}

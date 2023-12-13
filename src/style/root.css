@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+}
+html {
+    font-family: var(--Font-family);
+    overflow-x: hidden !important;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #e0e0e0;
+}
+::-webkit-scrollbar-track:hover {
+    background: #555;
+}
+
+:root {
+    --Dark-Blue-intro: hsla(217, 27%, 15%, 0.466);
+    --Dark-Blue-main-bg: hsl(218, 28%, 13%);
+    --Dark-Blue-footer-bg: hsl(216, 53%, 9%);
+    --Dark-Blue-testimonial-bg: hsl(219, 30%, 18%);
+    --Cyan: hsl(176, 68%, 64%);
+    --Blue: hsl(198, 60%, 50%);
+    --Light-Red-error: hsl(0, 100%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Black: #000;
+    --Font-family: 'Rubik', sans-serif;
+
+    --btn-bg: linear-gradient(165deg, hsl(176, 68%, 64%) 10%, hsl(198, 60%, 50%) 105%);
+    --sidebar-bg: #000000c5;
+  }
+  
