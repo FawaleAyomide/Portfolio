@@ -24,8 +24,8 @@ html {
 }
 
 :root {
-    --Dark-Blue-intro: hsla(217, 27%, 15%, 0.466);
-    --Dark-Blue-main-bg: hsl(218, 28%, 13%);
+    --Dark-Blue-intro: hsla(217, 27%, 15%, 0.308);
+    --Dark-Blue-main-bg: hsl(217, 27%, 13%);
     --Dark-Blue-footer-bg: hsl(216, 53%, 9%);
     --Dark-Blue-testimonial-bg: hsl(219, 30%, 18%);
     --Cyan: hsl(176, 68%, 64%);
@@ -36,6 +36,6 @@ html {
     --Font-family: 'Rubik', sans-serif;
 
     --btn-bg: linear-gradient(165deg, hsl(176, 68%, 64%) 10%, hsl(198, 60%, 50%) 105%);
-    --sidebar-bg: #000000c5;
+    --sidebar-bg: #000000;
   }
   

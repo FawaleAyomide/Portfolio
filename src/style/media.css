@@ -12,6 +12,10 @@
     height: 2rem;
     cursor: pointer;
   }
+  .menu:hover {
+    color: var(--Cyan);
+    transition: .6s ease-in-out all;
+  }
   .navlinks {
     position: fixed;
     width: 100%;
