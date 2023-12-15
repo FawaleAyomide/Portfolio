@@ -55,3 +55,21 @@
     transform: rotateX("90deg");
   }
 }
+/* main */
+@media (max-width: 800px){
+    main p{
+        width: 100%;
+    }
+}
+@media (max-width: 515px){
+    .stacks{
+        flex-wrap: wrap;
+        place-content: center;
+    }
+}
+@media (max-width: 440px){
+    .stacks{
+        flex-wrap: wrap;
+        place-content: center;
+    }
+}
