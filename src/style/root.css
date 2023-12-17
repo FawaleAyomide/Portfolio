@@ -36,6 +36,7 @@ body{
     --Blue: hsl(198, 60%, 50%);
     --Light-Red-error: hsl(0, 100%, 63%);
     --White: hsl(0, 0%, 100%);
+    --Bord: hsl(0, 0%, 75%);
     --Black: #000;
     --Font-family: 'Rubik', sans-serif;
 

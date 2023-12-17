@@ -21,11 +21,7 @@ video {
   width: 100%;
   height: 120%;
 }
-#about{
-  background: rgba(0, 0, 0, 0.9);
-  margin-top: -.0005rem;
-  padding: 5rem;
-}
+
 /* navbar */
 .navbar {
   display: flex;
@@ -37,7 +33,7 @@ video {
   color: var(--White);
   position: fixed;
   width: 100%;
-  z-index: 6;
+  z-index: 7;
 }
 .navbar.active{
   background-color: var(--Dark-Blue-main-bg);
@@ -94,7 +90,7 @@ main p {
   height: 17rem;
   object-fit: cover;
   border-radius: 50%;
-  border: .2rem dotted var(--Blue);
+  border: .2rem solid var(--Bord);
   -webkit-animation: idan 8s ease-in-out infinite;
   animation: idan 8s ease-in-out infinite;
 }
@@ -134,4 +130,30 @@ main p {
   color: var(--Cyan);
   transform: rotate(360deg);
   transition: 1s ease-in-out all;
+}
+
+/* About */
+#about{
+  background: rgba(0, 0, 0, 0.9);
+  margin-top: -.01rem;
+  padding: 5rem;
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  place-items: center;
+}
+.about h1{
+  line-height: 3rem;
+  width: 33.5rem;
+  text-align: center;
+  font-size: 2.2rem;
+}
+.about p{
+  font-size: 1.3rem;
+  line-height: 2rem;
+  width: 55.5rem;
+  text-align: center;
 }
