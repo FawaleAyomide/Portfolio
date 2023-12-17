@@ -73,3 +73,17 @@
         place-content: center;
     }
 }
+/* about */
+@media (max-width: 960px){
+    #about {
+        padding: 5rem 3rem;
+    }
+    .about p {
+        width: 100%;
+    }
+}
+@media (max-width: 655px){
+    .about h1 {
+        width: 100%;
+    }
+}
