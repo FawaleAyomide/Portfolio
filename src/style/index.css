@@ -184,11 +184,14 @@ main p {
 }
 .hack{
   width: 100%;
+  height: 15rem;
   display: block;
   margin: auto;
   border-radius: .9rem;
+  background-color: rgba;
 }
 .box-content{
+  border-radius: .9rem;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -215,9 +218,9 @@ main p {
   transition: transform .6s;
 }
 .box:hover{
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
   transition: .3s ease-in-out all;
   border-radius: .9rem;
 }

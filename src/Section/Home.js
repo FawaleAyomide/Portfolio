@@ -14,12 +14,12 @@ import { TbClick } from "react-icons/tb";
 
 const Home = () => {
   const [projects, setProjects] = useState([
-    { id: 1, title: 'Construction Fields', subHeading: 'Construction Fields landing page.', url: 'https://construction-field.vercel.app/', image: 'https://pixabay.com/photos/coding-programming-css-1853305/'},
-    { id: 2, title: "Loopstudios", subHeading: 'Loopstudio responsive landing page.', url: 'https://loop-studio-silk.vercel.app/#', image: 'https://pixabay.com/photos/coding-programming-css-1853305/' },
-    { id: 3, title: "Zchat App", subHeading: 'A Haven for Text-Based Content', url: 'https://zchat-c3aae.web.app/', image: 'https://pixabay.com/photos/coding-programming-css-1853305/' },
-    { id: 4, title: "Easy Bank Landing Page", subHeading: 'Next generation digital banking.', url: 'https://easy-bank-landing-page-omega.vercel.app/', image: 'https://pixabay.com/photos/coding-programming-css-1853305/' },
-    { id: 5, title: "Sunny Side Agency", subHeading: 'Transform your brand.', url: 'https://sunny-side-agency-one.vercel.app/', image: 'https://pixabay.com/photos/coding-programming-css-1853305/' },
-    { id: 6, title: "Fylo Dark Theme Landing Page", subHeading: 'All your files in one secure location, accessible anywhere.', url: 'https://fylo-dark-theme-sol.netlify.app/', image: 'https://pixabay.com/photos/coding-programming-css-1853305/' },
+    { id: 1, title: 'Construction Fields', subHeading: 'Construction Fields landing page.', url: 'https://construction-field.vercel.app/', image: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHfW-eZ8ag3E7wnEj2EQSRev8R2BpBIhdNeac3eZuuMzIFmwK0'},
+    { id: 2, title: "Loopstudios", subHeading: 'Loopstudio responsive landing page.', url: 'https://i.pinimg.com/564x/49/c6/e1/49c6e1672b1f53fcd21d17ebebeabab1.jpg' },
+    { id: 3, title: "Zchat App", subHeading: 'A Haven for Text-Based Content', url: 'https://zchat-c3aae.web.app/' , image: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHfW-eZ8ag3E7wnEj2EQSRev8R2BpBIhdNeac3eZuuMzIFmwK0' },
+    { id: 4, title: "Easy Bank Landing Page", subHeading: 'Next generation digital banking.', url: 'https://easy-bank-landing-page-omega.vercel.app/' , image: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHfW-eZ8ag3E7wnEj2EQSRev8R2BpBIhdNeac3eZuuMzIFmwK0' },
+    { id: 5, title: "Sunny Side Agency", subHeading: 'Transform your brand.', url: 'https://sunny-side-agency-one.vercel.app/' , image: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHfW-eZ8ag3E7wnEj2EQSRev8R2BpBIhdNeac3eZuuMzIFmwK0' },
+    { id: 6, title: "Fylo Dark Theme Landing Page", subHeading: 'All your files in one secure location, accessible anywhere.', url: 'https://fylo-dark-theme-sol.netlify.app/' , image: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHfW-eZ8ag3E7wnEj2EQSRev8R2BpBIhdNeac3eZuuMzIFmwK0' },
   ])
 
   useEffect(() => {
@@ -86,7 +86,7 @@ const Home = () => {
             <div className="boxes">
             {projects.map((project) => (
                 <div className="box" key={project.id}>
-                  <img src={Hack} alt=""  className="hack"/>
+                  <img src={project.image} alt=""  className="hack"/>
                   <div className="box-content">
                   <h2>{project.title}</h2>
                   <p>{project.subHeading}</p>
