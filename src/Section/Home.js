@@ -1,16 +1,27 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Nav from "./Nav";
 import Idan from "../images/IMG-20221116-WA0005.jpg";
+import Hack from "../images/hacking-2903156_1280.jpg";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { PiFileCssLight } from "react-icons/pi";
 import { TbBrandJavascript } from "react-icons/tb";
 import { FaReact } from "react-icons/fa6";
 import { LiaSass } from "react-icons/lia";
-import { FaCode } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { TbClick } from "react-icons/tb";
 
 const Home = () => {
+  const [projects, setProjects] = useState([
+    { id: 1, title: 'Construction Fields', subHeading: 'Construction Fields landing page.', url: 'https://construction-field.vercel.app/', image: 'https://pixabay.com/photos/coding-programming-css-1853305/'},
+    { id: 2, title: "Loopstudios", subHeading: 'Loopstudio responsive landing page.', url: 'https://loop-studio-silk.vercel.app/#', image: 'https://pixabay.com/photos/coding-programming-css-1853305/' },
+    { id: 3, title: "Zchat App", subHeading: 'A Haven for Text-Based Content', url: 'https://zchat-c3aae.web.app/', image: 'https://pixabay.com/photos/coding-programming-css-1853305/' },
+    { id: 4, title: "Easy Bank Landing Page", subHeading: 'Next generation digital banking.', url: 'https://easy-bank-landing-page-omega.vercel.app/', image: 'https://pixabay.com/photos/coding-programming-css-1853305/' },
+    { id: 5, title: "Sunny Side Agency", subHeading: 'Transform your brand.', url: 'https://sunny-side-agency-one.vercel.app/', image: 'https://pixabay.com/photos/coding-programming-css-1853305/' },
+    { id: 6, title: "Fylo Dark Theme Landing Page", subHeading: 'All your files in one secure location, accessible anywhere.', url: 'https://fylo-dark-theme-sol.netlify.app/', image: 'https://pixabay.com/photos/coding-programming-css-1853305/' },
+  ])
+
   useEffect(() => {
     Aos.init({
       duration: 400,
@@ -68,8 +79,23 @@ const Home = () => {
           </div>
         </section>
         <section>
-          <div className="services">
-            <FaCode className="code-icon" />
+          <div className="works">
+            <div className="head">
+              <h1>My Recent Work</h1>
+            </div>
+            <div className="boxes">
+            {projects.map((project) => (
+                <div className="box" key={project.id}>
+                  <img src={Hack} alt=""  className="hack"/>
+                  <div className="box-content">
+                  <h2>{project.title}</h2>
+                  <p>{project.subHeading}</p>
+                  <Link to={project.url} ><TbClick  className="click"/></Link>
+                  </div>
+                  </div>
+              ))}
+              </div>
+              <Link to='/projects' className="btn">See more</Link>
           </div>
         </section>
       </div>

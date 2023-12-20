@@ -1,7 +1,4 @@
 /* navbar */
-@media (min-width: 1200px){
-
-}
 @media (max-width: 1150px) {
   .navbar {
     gap: 0;
@@ -104,4 +101,21 @@
     #about {
         padding: 5rem 1rem;
     }
+}
+/* work */
+@media (max-width: 1205px) {
+  .boxes{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width:460px) {
+  .works{
+    padding: 4rem 2rem;
+
+  }
+  .box{
+    width: 100%;
+    padding: 2rem 1rem;
+  }
 }
