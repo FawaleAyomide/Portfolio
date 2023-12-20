@@ -1,4 +1,7 @@
 /* navbar */
+@media (min-width: 1200px){
+  
+}
 @media (max-width: 1150px) {
   .navbar {
     gap: 0;
@@ -85,5 +88,10 @@
 @media (max-width: 655px){
     .about h1 {
         width: 100%;
+    }
+}
+@media (max-width: 450px){
+    #about {
+        padding: 5rem 1rem;
     }
 }

@@ -2,13 +2,13 @@ import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Nav from "./Nav";
-import Bg from "../images/space_-_5200.mp4";
 import Idan from "../images/IMG-20221116-WA0005.jpg";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { PiFileCssLight } from "react-icons/pi";
 import { TbBrandJavascript } from "react-icons/tb";
 import { FaReact } from "react-icons/fa6";
 import { LiaSass } from "react-icons/lia";
+import { FaCode } from "react-icons/fa";
 
 const Home = () => {
   useEffect(() => {
@@ -20,9 +20,9 @@ const Home = () => {
   });
 
   return (
-    <div>
+    <>
       <div className="container">
-        <div className="content">
+        <header>
           <Nav />
           <main>
             <h1>Frontend Developer</h1>
@@ -44,32 +44,36 @@ const Home = () => {
               </div>
             </div>
           </main>
-          <section>
-            <div id="about" className="about">
-              <h1>
-                Hello I'm Fawale Ayomide. I'ts really nice to have you here.
-              </h1>
-              <p>
-                I am a Frontend web developer, I make use of some major
-                tools and frameworks used in creating web applications in the
-                modern days. As a Front-end developer i create websites and web
-                apps using web languages such as HTML, CSS, JavaScript,
-                (React(.js) — client-side JavaScript frameworks), that
-                allow users to access and interact with the site or app.. using
-                these technologies to create websites provides a very good
-                client-side user experience, thereby attracting more users or
-                customers depending on the content or type of website you want
-                done.
-              </p>
+        </header>
+        <section>
+          <div id="about" className="about">
+            <h1>
+              Hello I'm Fawale Ayomide. I'ts really nice to have you here.
+            </h1>
+            <p>
+              I am a Frontend web developer, I make use of some major tools and
+              frameworks used in creating web applications in the modern days.
+              As a Front-end developer i create websites and web apps using web
+              languages such as HTML, CSS, JavaScript, (React(.js) — client-side
+              JavaScript frameworks), that allow users to access and interact
+              with the site or app.. using these technologies to create websites
+              provides a very good client-side user experience, thereby
+              attracting more users or customers depending on the content or
+              type of website you want done.
+            </p>
+            <div className="tools">
+              <h2>Devtools</h2>|
+              <p>Github, Vercel, Firebase, Bootstrap, Terminal, Netlify</p>
             </div>
-          </section>
-          <section>
-            <div className="services"></div>
-          </section>
-        </div>
-        <video src={Bg} muted autoPlay loop></video>
+          </div>
+        </section>
+        <section>
+          <div className="services">
+            <FaCode className="code-icon" />
+          </div>
+        </section>
       </div>
-    </div>
+    </>
   );
 };
 
