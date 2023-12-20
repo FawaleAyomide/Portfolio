@@ -1,6 +1,6 @@
 /* navbar */
 @media (min-width: 1200px){
-  
+
 }
 @media (max-width: 1150px) {
   .navbar {
@@ -59,6 +59,12 @@
   }
 }
 /* main */
+@media (max-width: 885px){
+  main {
+    background: url(../images/background-destination-tablet.jpg) center no-repeat;
+    background-size: cover;
+  }
+}
 @media (max-width: 800px){
     main p{
         width: 100%;
@@ -71,6 +77,10 @@
     }
 }
 @media (max-width: 440px){
+    main {
+      background: url(../images/background-destination-mobile.jpg) center no-repeat;
+      background-size: cover;
+    }
     .stacks{
         flex-wrap: wrap;
         place-content: center;
