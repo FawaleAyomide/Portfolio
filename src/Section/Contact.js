@@ -3,7 +3,7 @@ import Nav from './Nav'
 
 const Contact = () => {
   return (
-    <div className='contact-cont'>
+    <div className='contact-container'>
       <Nav/>
       <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
