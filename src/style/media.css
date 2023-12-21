@@ -143,6 +143,15 @@
     width: 100%;
   }
 }
+@media (max-width: 525px) {
+  .contact{
+    margin-top: 8rem;
+    padding: 1.5rem;
+  }
+  input{
+    width: 100%;
+  }
+}
 /* footer */
 @media (max-width: 1150px) {
   footer {
