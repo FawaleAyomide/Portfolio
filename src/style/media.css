@@ -130,3 +130,11 @@
     margin: 0 auto;
   }
 }
+@media (max-width: 690px) {
+  .contact{
+    margin-top: 8rem;
+  }
+  input{
+    width: 100%;
+  }
+}

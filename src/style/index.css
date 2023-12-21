@@ -284,12 +284,14 @@ main p {
 }
 form{
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .inputBox{
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 input{
   padding: 1rem;
