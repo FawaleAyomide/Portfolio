@@ -1,7 +1,20 @@
-import React from 'react'
+import {useRef} from 'react'
 import Nav from './Nav'
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_f68xsa5', 'template_czcf29p', form.current, '2nacB7w38X-FzEXNm')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <div className='contact-container'>
       <Nav/>
@@ -9,15 +22,17 @@ const Contact = () => {
       <h2 class="heading">Contact <span>Me!</span></h2>
 
       <form
-        // onSubmit={sendEmail()}
+        onSubmit={sendEmail}
+        ref={sendEmail}
       >
         <div class="inputBox">
-          <input type="text" id="name" placeholder="Full Name" required />
-          <input type="text" id="email" placeholder="Email Address" required />
+          <input type="text" name='from_name' id="name" placeholder="Full Name" required />
+          <input type="text" name='from_email' id="email" placeholder="Email Address" required />
         </div>
         <div class="inputBox">
           <input
             type="number"
+            name='message'
             id="phone-no"
             placeholder="Mobile Number"
             required
@@ -31,7 +46,7 @@ const Contact = () => {
           rows="10"
           placeholder="Your Message"
         ></textarea>
-        <input type="submit" value="Send Message" class="btn sub-btn" />
+        <input type="submit" value="Send" class="btn sub-btn" />
       </form>
     </section>
       </div>
