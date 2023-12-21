@@ -10,17 +10,59 @@ import { FaReact } from "react-icons/fa6";
 import { LiaSass } from "react-icons/lia";
 import { Link } from "react-router-dom";
 import { TbClick } from "react-icons/tb";
-import Zc from '../images/ZC Logo.jpg'
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import Zc from "../images/ZC Logo.jpg";
 
 const Home = () => {
   const [projects, setProjects] = useState([
-    { id: 1, title: 'Construction Fields', subHeading: 'Construction Fields landing page.', url: 'https://construction-field.vercel.app/', image: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHfW-eZ8ag3E7wnEj2EQSRev8R2BpBIhdNeac3eZuuMzIFmwK0'},
-    { id: 2, title: "Loopstudios", subHeading: 'Loopstudio responsive landing page.', url: 'https://www.pinterest.com/pin/863565297317918610/' },
-    { id: 3, title: "Zchat App", subHeading: 'A Haven for Text-Based Content', url: 'https://zchat-c3aae.web.app/' , image: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHfW-eZ8ag3E7wnEj2EQSRev8R2BpBIhdNeac3eZuuMzIFmwK0' },
-    { id: 4, title: "Easy Bank Landing Page", subHeading: 'Next generation digital banking.', url: 'https://easy-bank-landing-page-omega.vercel.app/' , image: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHfW-eZ8ag3E7wnEj2EQSRev8R2BpBIhdNeac3eZuuMzIFmwK0' },
-    { id: 5, title: "Sunny Side Agency", subHeading: 'Transform your brand.', url: 'https://sunny-side-agency-one.vercel.app/' , image: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHfW-eZ8ag3E7wnEj2EQSRev8R2BpBIhdNeac3eZuuMzIFmwK0' },
-    { id: 6, title: "Fylo Dark Theme Landing Page", subHeading: 'All your files in one secure location, accessible anywhere.', url: 'https://fylo-dark-theme-sol.netlify.app/' , image: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHfW-eZ8ag3E7wnEj2EQSRev8R2BpBIhdNeac3eZuuMzIFmwK0' },
-  ])
+    {
+      id: 1,
+      title: "Construction Fields",
+      subHeading: "Construction Fields landing page.",
+      url: "https://construction-field.vercel.app/",
+      image:
+        "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHfW-eZ8ag3E7wnEj2EQSRev8R2BpBIhdNeac3eZuuMzIFmwK0",
+    },
+    {
+      id: 2,
+      title: "Loopstudios",
+      subHeading: "Loopstudio responsive landing page.",
+      url: "https://www.pinterest.com/pin/863565297317918610/",
+    },
+    {
+      id: 3,
+      title: "Zchat App",
+      subHeading: "A Haven for Text-Based Content",
+      url: "https://zchat-c3aae.web.app/",
+      image:
+        "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHfW-eZ8ag3E7wnEj2EQSRev8R2BpBIhdNeac3eZuuMzIFmwK0",
+    },
+    {
+      id: 4,
+      title: "Easy Bank Landing Page",
+      subHeading: "Next generation digital banking.",
+      url: "https://easy-bank-landing-page-omega.vercel.app/",
+      image:
+        "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHfW-eZ8ag3E7wnEj2EQSRev8R2BpBIhdNeac3eZuuMzIFmwK0",
+    },
+    {
+      id: 5,
+      title: "Sunny Side Agency",
+      subHeading: "Transform your brand.",
+      url: "https://sunny-side-agency-one.vercel.app/",
+      image:
+        "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHfW-eZ8ag3E7wnEj2EQSRev8R2BpBIhdNeac3eZuuMzIFmwK0",
+    },
+    {
+      id: 6,
+      title: "Fylo Dark Theme Landing Page",
+      subHeading: "All your files in one secure location, accessible anywhere.",
+      url: "https://fylo-dark-theme-sol.netlify.app/",
+      image:
+        "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHfW-eZ8ag3E7wnEj2EQSRev8R2BpBIhdNeac3eZuuMzIFmwK0",
+    },
+  ]);
 
   useEffect(() => {
     Aos.init({
@@ -84,21 +126,39 @@ const Home = () => {
               <h1>My Recent Work</h1>
             </div>
             <div className="boxes">
-            {projects.map((project) => (
+              {projects.map((project) => (
                 <div className="box" key={project.id}>
-                  <img src={Zc} alt=""  className="hack"/>
+                  <img src={Zc} alt="" className="hack" />
                   {/* <img src={project.image} alt=""  className="hack"/> */}
                   <div className="box-content">
-                  <h2>{project.title}</h2>
-                  <p>{project.subHeading}</p>
-                  <Link to={project.url} ><TbClick  className="click"/></Link>
+                    <h2>{project.title}</h2>
+                    <p>{project.subHeading}</p>
+                    <Link to={project.url}>
+                      <TbClick className="click" />
+                    </Link>
                   </div>
-                  </div>
+                </div>
               ))}
-              </div>
-              <Link to='/projects' className="btn">See more</Link>
+            </div>
+            <Link to="/projects" className="btn">
+              See more
+            </Link>
           </div>
         </section>
+        <footer>
+          <div className="contact-cont">
+            <h1>Hire Me!</h1>
+            <p>Looking for a Front-end developer?</p>
+            <Link to='/contact' className="btn">Contact me</Link>
+          </div>
+          {/* <div className="footer"> */}
+          <p className="right">Copyright © 2023. All rights are reserved</p>
+          <div className="foot-icon">
+            <FaGithub className="tech-icon" />
+            <FaLinkedin className="tech-icon" />
+          </div>
+          {/* </div> */}
+        </footer>
       </div>
     </>
   );
