@@ -123,3 +123,10 @@
     padding: 0 1rem;
   }
 }
+/* contact */
+@media (max-width: 775px) {
+  .contact{
+    width: 100%;
+    margin: 0 auto;
+  }
+}
