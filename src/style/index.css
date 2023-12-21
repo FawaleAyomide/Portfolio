@@ -173,9 +173,9 @@ main p {
   display: block;
   margin: auto;
   border-radius: .9rem;
-  background-color: rgba;
 }
 .box-content{
+  padding: 0 1.5rem;
   border-radius: .9rem;
   width: 100%;
   height: 100%;
@@ -185,11 +185,14 @@ main p {
   right: 0;
   background-color: rgba(0, 0, 0, 0.9); 
   display: flex;
+  gap: .7rem;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   opacity: 0;
   transition: .6s;
+  text-align: center;
+
 }
 .box-content:hover{
   opacity: 1;
@@ -244,6 +247,9 @@ main p {
 .click:hover {
   transform: rotate(360deg);
   transition: 1s ease-in-out all;
+}
+.pro{
+  margin: 7rem 0;
 }
 /* contact */
 .contact{

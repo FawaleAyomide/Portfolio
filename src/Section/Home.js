@@ -9,10 +9,10 @@ import { TbBrandJavascript } from "react-icons/tb";
 import { FaReact } from "react-icons/fa6";
 import { LiaSass } from "react-icons/lia";
 import { Link } from "react-router-dom";
+import Zc from "../images/ZC Logo.jpg";
 import { TbClick } from "react-icons/tb";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import Zc from "../images/ZC Logo.jpg";
 
 const Home = () => {
   const [projects, setProjects] = useState([
@@ -129,7 +129,6 @@ const Home = () => {
               {projects.map((project) => (
                 <div className="box" key={project.id}>
                   <img src={Zc} alt="" className="hack" />
-                  {/* <img src={project.image} alt=""  className="hack"/> */}
                   <div className="box-content">
                     <h2>{project.title}</h2>
                     <p>{project.subHeading}</p>
