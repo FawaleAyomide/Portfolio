@@ -1,16 +1,18 @@
-import {useState} from 'react'
-import Nav from './Nav'
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Zc from "../images/ZC Logo.jpg";
 import { TbClick } from "react-icons/tb";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import NavAlt from "./NavAlt";
 
 const Projects = () => {
-  const [projects, setProjects] = useState([
+  const projects = [
     {
       id: 1,
       title: "Construction Fields",
       subHeading: "Construction Fields landing page.",
-      url: "https://construction-field.vercel.app/"
+      url: "https://construction-field.vercel.app/",
     },
     {
       id: 2,
@@ -45,7 +47,8 @@ const Projects = () => {
     {
       id: 7,
       title: "Fylo Landing Page",
-      subHeading: "Fylo landing page with two column layout challenge on Frontend Mentor",
+      subHeading:
+        "Fylo landing page with two column layout challenge on Frontend Mentor",
       url: "https://fylo-landing-page-8bjw.vercel.app/",
     },
     {
@@ -66,26 +69,35 @@ const Projects = () => {
       subHeading: "QR code component challenge on Frontend Mentor)",
       url: "https://qr-code-component-seven-rouge.vercel.app/HTML",
     },
-  ])
+  ];
+
+  useEffect(() => {
+    Aos.init({
+      duration: 400,
+      easing: "ease",
+      Once: false,
+    });
+  });
+
   return (
     <div>
-      <Nav/>
+      <NavAlt />
       <div className="boxes pro">
-              {projects.map((project) => (
-                <div className="box" key={project.id}>
-                  <img src={Zc} alt="" className="hack" />
-                  <div className="box-content">
-                    <h2>{project.title}</h2>
-                    <p>{project.subHeading}</p>
-                    <Link to={project.url}>
-                      <TbClick className="click" />
-                    </Link>
-                  </div>
-                </div>
-              ))}
+        {projects.map((project) => (
+          <div className="box" key={project.id} data-aos="zoom-out-right">
+            <img src={Zc} alt="bg-img" className="hack" />
+            <div className="box-content">
+              <h2>{project.title}</h2>
+              <p>{project.subHeading}</p>
+              <Link to={project.url}>
+                <TbClick className="click" />
+              </Link>
             </div>
+          </div>
+        ))}
       </div>
-  )
-}
+    </div>
+  );
+};
 
-export default Projects
+export default Projects;

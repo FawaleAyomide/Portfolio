@@ -6,7 +6,7 @@ import { IoCloseSharp } from "react-icons/io5";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const Nav = () => {
+const NavAlt = () => {
   const [active, setActive] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(false);
 
@@ -41,9 +41,6 @@ const Nav = () => {
           <NavLink to="/" onClick={menuShow} className="navlink">
             Home
           </NavLink>
-          <a href="#about" onClick={menuShow} className="navlink">
-            About
-          </a>
           <NavLink to="/projects" onClick={menuShow} className="navlink">
             Projects
           </NavLink>
@@ -57,4 +54,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default NavAlt;

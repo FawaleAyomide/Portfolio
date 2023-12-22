@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Nav from "./Nav";
@@ -15,7 +15,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
 const Home = () => {
-  const [projects, setProjects] = useState([
+  const projects = [
     {
       id: 1,
       title: "Construction Fields",
@@ -61,8 +61,8 @@ const Home = () => {
       url: "https://fylo-dark-theme-sol.netlify.app/",
       image:
         "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHfW-eZ8ag3E7wnEj2EQSRev8R2BpBIhdNeac3eZuuMzIFmwK0",
-    },
-  ]);
+    }
+  ] 
 
   useEffect(() => {
     Aos.init({
@@ -76,17 +76,17 @@ const Home = () => {
     <>
       <div className="container">
         <header>
-          <Nav />
+          <Nav  />
           <main>
-            <h1>Frontend Developer</h1>
-            <p>
+            <h1 data-aos='zoom-out-left' data-aos-delay='100'>Frontend Developer</h1>
+            <p data-aos='zoom-out-right' data-aos-delay='200'>
               I specialize in crafting elegant and functional digital
               experiences by bringing simplicity to life through codes.
             </p>
-            <div className="hero-cont">
+            <div className="hero-cont" data-aos='zoom-out-up' data-aos-delay='300'>
               <img src={Idan} alt="hero-img" className="hero" />
             </div>
-            <div className="main-bottom">
+            <div className="main-bottom" data-aos='zoom-out-down' data-aos-delay='400'>
               <h2>Tech Stack</h2>|
               <div className="stacks">
                 <AiOutlineHtml5 className="tech-icon" />
@@ -100,10 +100,10 @@ const Home = () => {
         </header>
         <section>
           <div id="about" className="about">
-            <h1>
+            <h1 data-aos='fade-down' data-aos-delay='300'>
               Hello I'm Fawale Ayomide. I'ts really nice to have you here.
             </h1>
-            <p>
+            <p data-aos='zoom-in-left' data-aos-delay='400'>
               I am a Frontend web developer, I make use of some major tools and
               frameworks used in creating web applications in the modern days.
               As a Front-end developer i create websites and web apps using web
@@ -114,7 +114,7 @@ const Home = () => {
               attracting more users or customers depending on the content or
               type of website you want done.
             </p>
-            <div className="tools">
+            <div className="tools" data-aos='zoom-out-left' data-aos-delay='300'>
               <h2>Devtools</h2>|
               <p>Github, Vercel, Firebase, Bootstrap, Terminal, Netlify</p>
             </div>
@@ -122,13 +122,13 @@ const Home = () => {
         </section>
         <section>
           <div className="works">
-            <div className="head">
+            <div className="head" data-aos='fade-down'>
               <h1>My Recent Work</h1>
             </div>
             <div className="boxes">
               {projects.map((project) => (
-                <div className="box" key={project.id}>
-                  <img src={Zc} alt="" className="hack" />
+                <div className="box" key={project.id} data-aos='fade-up-left' data-aos-delay='400'>
+                  <img src={Zc} alt="bg-img" className="hack" />
                   <div className="box-content">
                     <h2>{project.title}</h2>
                     <p>{project.subHeading}</p>
@@ -139,13 +139,14 @@ const Home = () => {
                 </div>
               ))}
             </div>
-            <Link to="/projects" className="btn">
+            <Link to="/projects" className="btn" data-aos='flip-up' data-aos-delay='300'>
               See more
             </Link>
           </div>
         </section>
-        <footer>
-          <div className="contact-cont">
+        <footer data-aos='zoom-in-up'
+              data-aos-delay='400'>
+          <div className="contact-cont" >
             <h1>Hire Me!</h1>
             <p>Looking for a Front-end developer?</p>
             <Link to='/contact' className="btn">Contact me</Link>

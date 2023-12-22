@@ -1,8 +1,10 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
-import Nav from "./Nav";
+import NavAlt from "./NavAlt";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const notify = () => {
   toast.success("Sent Successfully", {
@@ -49,15 +51,25 @@ const Contact = () => {
     resetC.current.value = "";
   };
 
+  useEffect(() => {
+    Aos.init({
+      duration: 400,
+      easing: "ease",
+      Once: false,
+    });
+  });
+
   return (
     <div className="contact-container">
-      <Nav />
+      <NavAlt />
       <section class="contact" id="contact">
-        <h2 class="heading">
+        <h2 class="heading" data-aos='fade-down'
+              data-aos-delay='400'>
           Contact <span>Me!</span>
         </h2>
 
-        <form onSubmit={sendEmail}>
+        <form onSubmit={sendEmail} data-aos='zoom-out-right'
+              data-aos-delay='400'>
           <div class="inputBox" >
             <input
               type="text"
