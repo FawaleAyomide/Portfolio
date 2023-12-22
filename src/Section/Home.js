@@ -13,6 +13,7 @@ import Zc from "../images/ZC Logo.jpg";
 import { TbClick } from "react-icons/tb";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { FaArrowCircleUp } from "react-icons/fa";
 
 const Home = () => {
   const projects = [
@@ -77,7 +78,7 @@ const Home = () => {
       <div className="container">
         <header>
           <Nav  />
-          <main>
+          <main id="up">
             <h1 data-aos='zoom-out-left' data-aos-delay='100'>Frontend Developer</h1>
             <p data-aos='zoom-out-right' data-aos-delay='200'>
               I specialize in crafting elegant and functional digital
@@ -151,13 +152,12 @@ const Home = () => {
             <p>Looking for a Front-end developer?</p>
             <Link to='/contact' className="btn">Contact me</Link>
           </div>
-          {/* <div className="footer"> */}
           <p className="right">Copyright © 2023. All rights are reserved</p>
           <div className="foot-icon">
             <Link to='https://github.com/FawaleAyomide' target="_blank"><FaGithub className="tech-icon" /></Link>
             <Link to='https://www.linkedin.com/in/ayomide-oladele-633987264/' target="_blank"><FaLinkedin className="tech-icon" /></Link>
+            <Link to='#up' target="_blank" ><FaArrowCircleUp className="tech-icon" /></Link>
           </div>
-          {/* </div> */}
         </footer>
       </div>
     </>
