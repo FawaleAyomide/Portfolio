@@ -15,6 +15,9 @@ html {
     color: var(--White);
     background-color: var(--Dark-Blue-intro);
 }
+body{
+    overflow: hidden;
+}
 ::-webkit-scrollbar {
     width: 5px;
 }
