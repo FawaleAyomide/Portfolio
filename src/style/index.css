@@ -260,12 +260,12 @@ main p {
   flex-direction: column;
   margin-top: 4rem;
   background-color: var(--Dark-Blue-main-bg);
-  width: 43rem;
+  width: 36rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 1.5rem 0;
+  padding: 2rem 0;
   gap: 2rem;
   border-radius: .6rem;
 }
@@ -280,7 +280,6 @@ form{
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  /* flex-direction: column; */
 }
 input{
   margin: auto;
