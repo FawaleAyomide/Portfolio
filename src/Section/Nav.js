@@ -34,7 +34,7 @@ const Nav = () => {
   
   return (
     <>
-      <div className={scrollPosition ? "navbar active" : "navbar"} data-aos='zoom-out'>
+      <div className={scrollPosition ? "navbar active" : "navbar"}>
         <h2 className="logo">Zcodes.Dev</h2>
         <div className={!active ? "navlinks " : "navlinks active"}>
           <IoCloseSharp className="close-icon" onClick={menuShow} />
