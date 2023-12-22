@@ -273,28 +273,41 @@ form{
   gap: 1rem;
   flex-direction: column;
   flex-wrap: wrap;
+  position: relative;
 }
 .inputBox{
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  /* flex-direction: column; */
 }
 input{
+  margin: auto;
   padding: 1rem;
-  width: 18rem;
+  width: 30rem;
   border-radius: .6rem;
   cursor: pointer;
   font-size: 1.01rem;
+  background-color: var(--Dark-Blue-testimonial-bg);
+  color: var(--White);
+}
+input:focus{
+  background-color: var(--Dark-Blue-testimonial-bg);
+  color: var(--White);
 }
 input:hover, textarea:hover{
   border: .2rem solid var(--Cyan);
   transition: .6s ease-in-out all;
 }
 textarea{
+  margin: auto;
   padding: 1rem;
   border-radius: .6rem;
+  width: 30rem;
   cursor: pointer;
   font-size: 1.01rem;
+  background-color: var(--Dark-Blue-testimonial-bg);
+  color: var(--White);
 }
 /* contact-cont */
 .contact-cont{

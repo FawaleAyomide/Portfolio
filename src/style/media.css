@@ -139,17 +139,14 @@
   .contact{
     margin-top: 8rem;
   }
-  input{
+  input, textarea{
     width: 100%;
   }
 }
 @media (max-width: 525px) {
   .contact{
-    margin-top: 8rem;
+    margin-top: 1rem;
     padding: 1.5rem;
-  }
-  input{
-    width: 100%;
   }
 }
 /* footer */
