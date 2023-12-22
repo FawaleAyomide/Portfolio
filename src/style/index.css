@@ -104,6 +104,7 @@ main p {
   padding: 0.8rem;
   border-radius: 50%;
   cursor: pointer;
+  color: var(--White);
 }
 .tech-icon:hover {
   color: var(--Cyan);
@@ -339,4 +340,8 @@ footer{
 }
 footer p{
   line-height: 1.8rem;
+}
+.foot-icon{
+  display: flex;
+  gap: 1rem;
 }
