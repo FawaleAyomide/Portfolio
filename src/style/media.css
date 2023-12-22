@@ -38,9 +38,6 @@
   .navlink {
     text-align: center;
     margin-block: 1.5rem;
-    color: var(--Cyan);
-  }
-  .navlink.active {
   }
   .close-icon {
     cursor: pointer;

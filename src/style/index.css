@@ -25,7 +25,7 @@
   cursor: pointer;
   font-size: 1.2rem;
 }
-.navlink:active {
+.navlink.active {
   color: var(--Cyan);
 }
 .navlink:hover {
