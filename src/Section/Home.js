@@ -156,7 +156,7 @@ const Home = () => {
           <div className="foot-icon">
             <Link to='https://github.com/FawaleAyomide' target="_blank"><FaGithub className="tech-icon" /></Link>
             <Link to='https://www.linkedin.com/in/ayomide-oladele-633987264/' target="_blank"><FaLinkedin className="tech-icon" /></Link>
-            <Link to='#up' target="_blank" ><FaArrowCircleUp className="tech-icon" /></Link>
+            <a href='#up'><FaArrowCircleUp className="tech-icon" /></a>
           </div>
         </footer>
       </div>
