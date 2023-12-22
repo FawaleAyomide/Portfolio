@@ -18,13 +18,16 @@ const notify = () => {
 };
 
 const Contact = () => {
-  const reset = useRef();
+  const resetA = useRef();
+  const resetB = useRef();
+  const resetC = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm('service_f68xsa5', 'template_mkpnzfd',
     e.target, 'puAGSj6EpJVsWTtha')
+
     // emailjs
     //   .sendForm(
     //     "process.env.React_App_Service_Id",
@@ -32,6 +35,7 @@ const Contact = () => {
     //     e.target,
     //     "process.env.React_App_Public_Id"
     //   )
+
       .then(
         (result) => {
           console.log(result.text);
@@ -40,7 +44,9 @@ const Contact = () => {
           console.log(error.text);
         }
       );
-    reset.current.value = "";
+    resetA.current.value = "";
+    resetB.current.value = "";
+    resetC.current.value = "";
   };
 
   return (
@@ -52,13 +58,14 @@ const Contact = () => {
         </h2>
 
         <form onSubmit={sendEmail}>
-          <div class="inputBox" ref={reset}>
+          <div class="inputBox" >
             <input
               type="text"
               name="from_name"
               id="name"
               placeholder="Full Name"
               required
+              ref={resetA}
             />
             <input
               type="text"
@@ -66,25 +73,16 @@ const Contact = () => {
               id="email"
               placeholder="Email Address"
               required
+              ref={resetB}
             />
           </div>
-          {/* <div class="inputBox">
-          <input
-            type="number"
-            name='message'
-            id="phone-no"
-            placeholder="Mobile Number"
-            required
-          />
-          <input type="text" id="email-sub" placeholder="Email Subject" />
-        </div> */}
           <textarea
             name="message"
             id="message"
             cols="10"
             rows="5"
             placeholder="Your Message"
-            ref={reset}
+            ref={resetC}
           ></textarea>
           <input
             type="submit"
