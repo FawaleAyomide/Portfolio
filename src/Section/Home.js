@@ -152,7 +152,7 @@ const Home = () => {
             <p>Looking for a Front-end developer?</p>
             <Link to='/contact' className="btn">Contact me</Link>
           </div>
-          <p className="right">Copyright © 2023. All rights are reserved</p>
+          <p className="right">Copyright © 2025. All rights are reserved</p>
           <div className="foot-icon">
             <Link to='https://github.com/FawaleAyomide' target="_blank"><FaGithub className="tech-icon" /></Link>
             <Link to='https://www.linkedin.com/in/ayomide-oladele-633987264/' target="_blank"><FaLinkedin className="tech-icon" /></Link>
